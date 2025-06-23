@@ -75,7 +75,11 @@ export default function Home() {
           </a>
         </div>
         <div className="home-buttons">
-          <a href="/ROHIT_SWAMI_RESUME.pdf" download className="btn">
+          <a
+            href="/MYPORTFOLIO/ROHIT_SWAMI_RESUME.pdf"
+            download
+            className="btn"
+          >
             Download CV <FaDownload style={{ marginLeft: "8px" }} />
           </a>
 
