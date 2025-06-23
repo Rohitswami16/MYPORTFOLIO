@@ -75,6 +75,7 @@ export default function Projects() {
               )}
 
               <h3>{project.title}</h3>
+              <br />
               <p>{project.description}</p>
               <a
                 href={project.githubLink}
