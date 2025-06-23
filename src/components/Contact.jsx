@@ -1,8 +1,22 @@
-import React, { forwardRef, useState } from "react";
+import React, { forwardRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import "../App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Contact() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+      easing: "ease-in-out",
+      offset: 100,
+      delay: 100,
+      disable: "mobile",
+    });
+  }, []);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -58,20 +72,21 @@ export default function Contact() {
         <div className="contact-container">
           <div className="contact-info">
             <div className="contact-item">
-              <h3>Email</h3>
-              <p>rohitswami1612@gmail.com</p>
+              <h3 data-aos="fade-right">Email</h3>
+              <p data-aos="fade-right">rohitswami1612@gmail.com</p>
 
-              <h3>Phone No</h3>
-              <p>+91 7090428655</p>
+              <h3 data-aos="fade-right">Phone No</h3>
+              <p data-aos="fade-right">+91 7090428655</p>
 
-              <h3>Address</h3>
-              <p>Bengaluru Karnataka, India</p>
+              <h3 data-aos="fade-right">Address</h3>
+              <p data-aos="fade-right">Bengaluru Karnataka, India</p>
 
               <div className="social-links">
                 <a
                   href="https://www.linkedin.com/in/rohit-swami16/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-aos="zoom-in"
                 >
                   <FaLinkedin />
                 </a>
@@ -79,6 +94,7 @@ export default function Contact() {
                   href="https://github.com/Rohitswami16"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-aos="zoom-in"  
                 >
                   <FaGithub />
                 </a>
@@ -86,13 +102,14 @@ export default function Contact() {
                   href="https://www.instagram.com/_rohit.xvi_/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-aos="zoom-in"
                 >
                   <FaInstagram />
                 </a>
               </div>
             </div>
           </div>
-          <div className="form-container">
+          <div className="form-container" data-aos="fade-left">
             <form onSubmit={handleSubmit}>
               <input
                 type="text"

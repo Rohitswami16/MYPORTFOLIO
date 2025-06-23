@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import profilePic from "../assets/Homeimage.jpg";
 import { FaDownload, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import "../App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
   const titles = [
@@ -13,6 +15,17 @@ export default function Home() {
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [charIndex, setCharIndex] = useState(0);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+      easing: "ease-in-out",
+      offset: 100,
+      delay: 100,
+      disable: "mobile",
+    });
+  }, []);
 
   useEffect(() => {
     const currentTitle = titles[currentTitleIndex];
@@ -37,7 +50,7 @@ export default function Home() {
 
   return (
     <section id="home" className="home">
-      <div className="home-content">
+      <div className="home-content" data-aos="fade-up-right">
         <h1>
           Hello, I'm <span>Rohit</span>
         </h1>
@@ -74,7 +87,7 @@ export default function Home() {
             <FaInstagram />
           </a>
         </div>
-        <div className="home-buttons">
+        <div className="home-buttons" >
           <a
             href="/MYPORTFOLIO/ROHIT_SWAMI_RESUME.pdf"
             download
@@ -89,7 +102,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="home-image">
+      <div className="home-image" data-aos="fade-up-left">
+        {/* ✅ Profile Picture */}
         <img src={profilePic} alt="Rohit Swami" />
       </div>
     </section>
