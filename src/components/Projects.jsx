@@ -33,16 +33,14 @@ export default function Projects() {
     },
     {
       title: "Portfolio Website",
-      description:
-        "This portfolio is built with modern web technologies such as React, JavaScript, HTML, CSS, and more. It contains sections highlighting my work, skills, and achievements, including links to my GitHub repositories and live project demos.",
+      description: "Created a personal portfolio website to showcase my projects and skills. The site is designed to be visually appealing and user-friendly, providing a comprehensive overview of my work.",
       image: portfolio,
       liveLink: "https://rohitswami16.github.io/MYPORTFOLIO/",
       githubLink: "https://github.com/Rohitswami16/MYPORTFOLIO",
     },
     {
       title: "OTP Authentication System",
-      description:
-        "Built an OTP-based authentication system in React.js using EmailJS. Replaces passwords with 30-second OTPs for improved security. Valid OTPs redirect users to the dashboard; invalid or expired ones prompt a new request.",
+      description: "Built an OTP authentication system in React.js with EmailJS using 30-second codes for secure login. Valid OTPs redirect to the dashboard; invalid ones prompt a retry.",
       image: otpproject,
       // liveLink: "https://rohitswami16.github.io/OTP-Authentication/",
       githubLink: "https://github.com/Rohitswami16/OTP-Authentication",
