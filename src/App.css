@@ -378,12 +378,13 @@ html {
   font-size: 1.2rem;
   line-height: 1.8;
   margin-bottom: 20px;
+  padding-bottom: 20px;
   color: #c5c6c7;
 }
 
 .aboutme p {
   font-size: 1.3rem;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: #d1d1d1;
 }
 
@@ -485,6 +486,7 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   gap: 50px;
+  padding: 50px 0;
 }
 
 .icon-item {
