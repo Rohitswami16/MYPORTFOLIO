@@ -36,8 +36,8 @@ export default function Projects() {
       description:
         "This portfolio is built with modern web technologies such as React, JavaScript, HTML, CSS, and more. It contains sections highlighting my work, skills, and achievements, including links to my GitHub repositories and live project demos.",
       image: portfolio,
-      liveLink: "https://rohitswami16.github.io/MY-PORTFOLIO/",
-      githubLink: "https://github.com/Rohitswami16/MY-PORTFOLIO",
+      liveLink: "https://rohitswami16.github.io/MYPORTFOLIO/",
+      githubLink: "https://github.com/Rohitswami16/MYPORTFOLIO",
     },
     {
       title: "OTP Authentication System",
