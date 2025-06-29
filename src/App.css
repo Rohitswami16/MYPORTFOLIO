@@ -1,5 +1,5 @@
 :root {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 * {
@@ -46,13 +46,15 @@ html {
   gap: 1.5rem;
   font-weight: bold;
 }
-
 .nav-links a {
   position: relative;
   text-decoration: none;
   font-size: 1.2rem;
-  transition: color 0.3s ease;
-  color: white;
+  font-weight: 500;
+  color: #e5e7eb; /* Light gray for better contrast */
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+  font-family: "Inter", sans-serif;
 }
 
 .nav-links a::after {
@@ -62,12 +64,20 @@ html {
   bottom: -10px;
   width: 0;
   height: 2px;
-  background-color: #6cdcf5;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
   transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #6cdcf5;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
 }
 
 .nav-links a:hover::after {
@@ -210,6 +220,8 @@ html {
   background: transparent;
 }
 
+
+
 .social-links a:hover {
   transform: scale(1.2);
   color: #00bcd4;
@@ -344,10 +356,21 @@ html {
 }
 
 .header {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: bold;
   margin-bottom: 30px;
-  color: #00bcd4;
   text-align: center;
+
+  background: linear-gradient(
+    to right,
+    rgb(0, 198, 255, 0.9),
+    rgb(0, 114, 255, 0.9)
+  ); /* Gradient */
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 768px) {
@@ -555,16 +578,20 @@ html {
 /* projects and certification section */
 .certifications-section,
 .project-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 50px;
+  display: flex;
   margin-top: 40px;
-  padding: 20px;
+  /* padding: 20px; */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .project-card {
   position: relative;
   height: 250px;
+  width: 350px;
   overflow: hidden;
   border-radius: 20px;
   border: 1px solid rgba(0, 198, 255, 0.9);
@@ -580,8 +607,8 @@ html {
 }
 
 .project-card:hover {
-  box-shadow: 0 0 15px 6px rgba(0, 188, 222, 0.5);
-  transform: scale(1.05);
+  box-shadow: 0 0 20px 10px rgba(0, 198, 255, 0.5);
+  transform: scale(1.1);
 }
 
 .card-top {
@@ -676,9 +703,9 @@ html {
     font-size: 0.9rem;
   }
 
-  .project-card:hover {
+  /* .project-card:hover {
     transform: scale(1);
-  }
+  } */
 
   .project-icon {
     font-size: 18px;
@@ -703,9 +730,9 @@ html {
     width: 95%;
     height: 95%;
   }
-  .project-card:hover {
+  /* .project-card:hover {
     transform: scale(1);
-  }
+  } */
 
   .card-bottom {
     padding: 12px;
@@ -722,6 +749,7 @@ html {
 .certificate-card {
   position: relative;
   height: 250px;
+  width: 350px;
   overflow: hidden;
   border-radius: 20px;
   border: 1px solid rgba(0, 198, 255, 0.9);
