@@ -1,8 +1,7 @@
 :root {
   font-family: poppins, sans-serif;
   /* font-family: "", sans-serif; */
-    background: linear-gradient(to right, #0d0d0d, #1b0f1f);
-
+  background: linear-gradient(to right, #0d0d0d, #1b0f1f);
 }
 
 * {
@@ -987,8 +986,11 @@ button:hover {
   }
 
   .contact-item {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    font-size: 16px;
   }
 
   .form-container {
@@ -999,7 +1001,7 @@ button:hover {
   .contact-info {
     flex: 1;
     padding: 20px;
-    text-align: left;
+    text-align: center;
   }
 
   input,
@@ -1029,6 +1031,15 @@ button:hover {
   .form-container {
     padding: 10px;
     margin-bottom: 10px;
+  }
+
+  .contact-item {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .contact-info {
