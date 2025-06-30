@@ -72,7 +72,7 @@ export default function Projects() {
         {projectData.map((project, index) => (
           <div
             className="project-card"
-            data-aos="zoom-in"
+            data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-delay={index * 100}
             key={index}

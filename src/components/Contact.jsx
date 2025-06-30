@@ -1,6 +1,13 @@
 import React, { forwardRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaInstagram,
+  FaEnvelope,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 import "../App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -72,21 +79,53 @@ export default function Contact() {
         <div className="contact-container">
           <div className="contact-info">
             <div className="contact-item">
-              <h3 data-aos="fade-right">Email</h3>
+              <h3
+                data-aos="fade-right"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  fontSize: "1rem",
+                }}
+              >
+                <FaEnvelope />
+                Email
+              </h3>
               <p data-aos="fade-right">rohitswami1612@gmail.com</p>
 
-              <h3 data-aos="fade-right">Phone No</h3>
+              <h3
+                data-aos="fade-right"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  fontSize: "1rem",
+                }}
+              >
+                <FaPhoneAlt />
+                Phone No
+              </h3>
               <p data-aos="fade-right">+91 7090428655</p>
 
-              <h3 data-aos="fade-right">Address</h3>
+              <h3
+                data-aos="fade-right"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  fontSize: "1rem",
+                }}
+              >
+                <FaMapMarkerAlt />
+                Address
+              </h3>
               <p data-aos="fade-right">Bengaluru Karnataka, India</p>
 
-              <div className="social-links">
+              <div className="social-links" data-aos="fade-right">
                 <a
                   href="https://www.linkedin.com/in/rohit-swami16/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-aos="zoom-in"
                 >
                   <FaLinkedin />
                 </a>
@@ -94,7 +133,6 @@ export default function Contact() {
                   href="https://github.com/Rohitswami16"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-aos="zoom-in"  
                 >
                   <FaGithub />
                 </a>
@@ -102,7 +140,6 @@ export default function Contact() {
                   href="https://www.instagram.com/_rohit.xvi_/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-aos="zoom-in"
                 >
                   <FaInstagram />
                 </a>
