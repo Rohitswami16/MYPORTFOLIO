@@ -862,7 +862,6 @@ html {
 }
 
 .contact-item {
-  /* margin: 10px; */
   display: "flex";
   align-items: "center";
   justify-items: start;
