@@ -78,49 +78,20 @@ export default function Contact() {
 
         <div className="contact-container">
           <div className="contact-info">
+            <div className="contact-me" data-aos="fade-right">
+              <FaEnvelope className="contact-icon" />
+              <p>rohitswami1612@gmail.com</p>
+            </div>
+            <div className="contact-me" data-aos="fade-right">
+              <FaPhoneAlt className="contact-icon" />
+              <p>+91 7090428655</p>
+            </div>
+            <div className="contact-me" data-aos="fade-right">
+              <FaMapMarkerAlt className="contact-icon" />
+              <p>Bengaluru Karnataka, India</p>
+            </div>
+
             <div className="contact-item">
-              <h3
-                data-aos="fade-right"
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "8px",
-                  fontSize: "1rem",
-                }}
-              >
-                <FaEnvelope />
-                Email
-              </h3>
-              <p data-aos="fade-right">rohitswami1612@gmail.com</p>
-
-              <h3
-                data-aos="fade-right"
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "8px",
-                  fontSize: "1rem",
-                }}
-              >
-                <FaPhoneAlt />
-                Phone No
-              </h3>
-              <p data-aos="fade-right">+91 7090428655</p>
-
-              <h3
-                data-aos="fade-right"
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "8px",
-                  fontSize: "1rem",
-                }}
-              >
-                <FaMapMarkerAlt />
-                Address
-              </h3>
-              <p data-aos="fade-right">Bengaluru Karnataka, India</p>
-
               <div className="social-links" data-aos="fade-right">
                 <a
                   href="https://www.linkedin.com/in/rohit-swami16/"

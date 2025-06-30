@@ -93,7 +93,7 @@ export default function Home() {
             download
             className="btn"
           >
-            Download CV <FaDownload style={{ marginLeft: "8px" }} />
+            Resume <FaDownload style={{ marginLeft: "8px" }} />
           </a>
 
           <a href="#contact" className="btn btn-secondary">
