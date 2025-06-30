@@ -23,9 +23,9 @@ const Navbar = () => {
         <a href="#about" onClick={closeMenu}>
           About
         </a>
-        <a href="#experience" onClick={closeMenu}>
+        {/* <a href="#experience" onClick={closeMenu}>
           Experience
-        </a>
+        </a> */}
         <a href="#skills" onClick={closeMenu}>
           Skills
         </a>
