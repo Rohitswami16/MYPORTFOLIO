@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
-import DSA from "../project-images/DSA.jpeg";
-import JDBCCRUD from "../project-images/JDBCCRUD.jpeg";
+import DSA from "../project-images/DSA.png";
+import JDBCCRUD from "../project-images/JDBCCRUD.png";
 import SDD from "../project-images/SDD.png";
-import otpproject from "../project-images/OTP-Authentication.jpg";
-import portfolio from "../project-images/portfolio-project.png";
+import otpproject from "../project-images/OTP-Auth.png";
+import portfolio from "../project-images/Portfolio.png";
 import "../App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -43,11 +43,11 @@ export default function Projects() {
       description:
         "Developed a skin disease detection model using BERT, LSTM, and ViT. Built a Django web app for image upload and fast, accurate predictions—improving diagnosis speed by 20%.",
       image: SDD,
-      githubLink: "https://github.com/Rohitswami16/Skin-Disease-Detection",
+      // githubLink: "https://github.com/Rohitswami16/Skin-Disease-Detection",
     },
     {
       index: 4,
-      title: "Portfolio Website",
+      title: "My Portfolio",
       description:
         "Created a personal portfolio website to showcase my projects and skills. The site is designed to be visually appealing and user-friendly, providing a comprehensive overview of my work.",
       image: portfolio,

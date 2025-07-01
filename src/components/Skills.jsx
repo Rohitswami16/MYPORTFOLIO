@@ -30,7 +30,7 @@ export default function Skills() {
         <div className="icon-item" data-aos="fade-up"><FaCss3Alt /><p>CSS3</p></div>
         <div className="icon-item" data-aos="fade-up"><FaJs /><p>JavaScript</p></div>
         <div className="icon-item" data-aos="fade-up"><FaReact /><p>ReactJS</p></div>
-        <div className="icon-item" data-aos="fade-up"><SiMysql /><p>MySql</p></div>
+        <div className="icon-item" data-aos="fade-up"><SiMysql /><p>MySQL</p></div>
         <div className="icon-item" data-aos="fade-up"><FaJava /><p>Java</p></div>
         <div className="icon-item" data-aos="fade-up"><SiSpringboot /><p>Spring Boot</p></div>
         <div className="icon-item" data-aos="fade-up"><SiHibernate /><p>Hibernate</p></div>

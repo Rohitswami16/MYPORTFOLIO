@@ -217,26 +217,31 @@ html {
 /* Social Links */
 .social-links {
   display: flex;
-  gap: 10px;
+  gap: 30px;
   margin-bottom: 30px;
 }
 
 .social-links a {
   font-size: 1.75rem;
   color: #00bcd4;
-  border-radius: 50%;
-  padding: 10px;
+  border-radius: 25%;
+  padding: 5px;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
+  place-items: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
+
+  box-shadow: 0 0 2px 2px rgba(4, 217, 255, 0.86);
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .social-links a:hover {
   transform: scale(1.2);
-  background: rgba(0, 188, 212, 0.1); /* light teal glow background */
-  box-shadow: 0 0 15px 4px rgba(0, 188, 212, 0.5);
+  box-shadow: 0 0 8px 4px rgba(4, 217, 255, 0.86);
   color: #00bcd4;
 }
 
@@ -543,6 +548,7 @@ html {
 }
 
 .icon-item p {
+  padding-top: 4px;
   font-size: 1rem;
 }
 
@@ -652,7 +658,8 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 13px;
+  margin-top: 10px;
+  border: 1px solid rgba(0, 198, 255, 0.9);
 }
 
 .project-card:hover .card-bottom {
@@ -679,14 +686,15 @@ html {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  transition: transform 0.2s ease;
   box-shadow: 0 0 10px 4px rgba(0, 188, 222, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transform-origin: center;
 }
 
 .live-link:hover,
 .github-link:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px 6px rgba(0, 188, 222, 0.5);
+  transform: scale(1.2);
+  box-shadow: 0 0 8px 4px rgba(4, 217, 255, 0.86);
 }
 
 .live-link {
@@ -886,11 +894,18 @@ html {
 
 .contact-icon {
   padding: 10px;
-  border-radius: 15%;
-  background-color: rgba(255, 255, 255, 0.1); /* transparent-like */
-  color: #00bcd4; /* icon color */
+  border-radius: 25%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #00bcd4;
   font-size: 2.5rem;
-  border: 1px solid rgba(0, 188, 212, 0.4); /* optional border */
+  border: 1px solid rgba(0, 188, 212, 0.4);
+  display: inline-flex;
+  place-items: center;
+  box-shadow: 0 0 2px 2px rgba(4, 217, 255, 0.86);
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  cursor: pointer;
 }
 
 /* .contact-item h3 {

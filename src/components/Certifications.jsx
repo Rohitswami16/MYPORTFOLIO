@@ -25,7 +25,7 @@ export default function Certifications() {
         <div className="certificate-card" data-aos="fade-up">
           <img
             src={PYTHONFORDATASCIENCE}
-            alt="PYTHONFORDATASCIENCE"
+            alt="Python for Data Science"
             className="certificate-image"
           />
         </div>
@@ -35,21 +35,21 @@ export default function Certifications() {
         <div className="certificate-card" data-aos="fade-up">
           <img
             src={gfb}
-            alt="GIT FOR BEGINEERS"
+            alt="Git for Beginners"
             className="certificate-image"
           />
         </div>
         <div className="certificate-card" data-aos="fade-up">
           <img
             src={pythonforbeginners}
-            alt="pythonforbeginners"
+            alt="Python for Beginners"
             className="certificate-image"
           />
         </div>
         <div className="certificate-card" data-aos="fade-up">
           <img
             src={javabasics}
-            alt="JAVA BASIC"
+            alt="Java Basics"
             className="certificate-image"
           />
         </div>
