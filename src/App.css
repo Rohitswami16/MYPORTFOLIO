@@ -778,10 +778,9 @@ html {
   background: rgba(60, 60, 140, 0.25);
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 10px 4px rgba(0, 188, 222, 0.4);
+  transition: all 0.3s ease-in-out;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   cursor: pointer;
