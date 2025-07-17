@@ -5,7 +5,7 @@ import About from "./components/About.jsx";
 import Exeprience from "./components/Experience.jsx";
 import Skills from "./components/Skills.jsx";
 import Projects from "./components/Projects.jsx";
-import Certifications from "./components/certifications.jsx";
+import Certifications from "./components/Certifications.jsx";
 import Contact from "./components/contact.jsx";
 import Footer from "./components/Footer.jsx";
 function App() {

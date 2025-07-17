@@ -66,53 +66,58 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="projects">
-      <h1 className="header">Projects</h1>
-      <div className="project-section">
-        {projectData.map((project, index) => (
-          <div
-            className="project-card"
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-delay={index * 100}
-            key={index}
-          >
-            <div className="card-top">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="project-image"
-              />
-            </div>
-            <div></div>
-            <div className="card-bottom">
-              {/* Show live link icon only if available */}
-              {project.liveLink && (
+    <>
+      {/* <div className="header-section">
+        <h1 className="header">Projects</h1>
+      </div> */}
+      <section id="projects" className="projects">
+        <h1 className="header">Projects</h1>
+        <div className="project-section">
+          {projectData.map((project, index) => (
+            <div
+              className="project-card"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-delay={index * 100}
+              key={index}
+            >
+              <div className="card-top">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-image"
+                />
+              </div>
+              <div></div>
+              <div className="card-bottom">
+                {/* Show live link icon only if available */}
+                {project.liveLink && (
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="live-link"
+                  >
+                    <FiExternalLink className="project-icon" />
+                  </a>
+                )}
+
+                <h3>{project.title}</h3>
+                <br />
+                <p>{project.description}</p>
                 <a
-                  href={project.liveLink}
+                  href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="live-link"
+                  className="github-link"
                 >
-                  <FiExternalLink className="project-icon" />
+                  <FaGithub className="project-icon" />
                 </a>
-              )}
-
-              <h3>{project.title}</h3>
-              <br />
-              <p>{project.description}</p>
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="github-link"
-              >
-                <FaGithub className="project-icon" />
-              </a>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </section>
+          ))}
+        </div>
+      </section>
+    </>
   );
 }
