@@ -13,7 +13,18 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+        mono: ["JetBrains Mono", "monospace"],
+      },
+      boxShadow: {
+        glow: "var(--shadow-glow)",
+      },
       colors: {
+        "bg-card": "hsl(var(--bg-card))",
+        "border-subtle": "hsl(var(--border-subtle))",
+        "text-dim": "hsl(var(--text-dim))",
+        success: "hsl(var(--success))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
