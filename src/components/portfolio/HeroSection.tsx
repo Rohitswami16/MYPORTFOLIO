@@ -115,7 +115,7 @@ const HeroSection = () => {
           </button>
           {/* Tertiary — Download Resume */}
           <a
-            href="/Rohit_Swami_Resume.pdf"
+            href="/MYPORTFOLIO/ROHIT_SWAMI_RESUME.pdf"
             download
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full border border-[hsl(var(--color-purple)/0.4)] text-foreground font-display text-sm font-medium hover:border-[hsl(var(--color-purple))] hover:bg-[hsl(var(--color-purple)/0.1)] transition-all"
           >
