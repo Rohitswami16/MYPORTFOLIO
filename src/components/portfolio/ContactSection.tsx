@@ -76,7 +76,7 @@ const ContactSection = () => {
           transition={{ delay: 0.2 }}
           className="text-muted-foreground mb-6 text-lg"
         >
-          Belagavi, Karnataka, India · (+91) 70904 28655 ·
+          Bengalore, Karnataka, India · (+91) 70904 28655 ·
           rohitswami1612@gmail.com
         </motion.p>
 
