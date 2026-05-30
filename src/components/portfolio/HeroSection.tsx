@@ -28,7 +28,7 @@ const HeroSection = () => {
 
       <div className="relative z-10 max-w-4xl text-center">
         {/* Badge */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -42,6 +42,37 @@ const HeroSection = () => {
           <span className="font-display text-sm tracking-widest uppercase text-[hsl(var(--color-purple))]">
             Software Developer
           </span>
+        </motion.div> */}
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="inline-flex items-center rounded-full border border-[hsl(var(--color-purple)/0.3)] bg-[hsl(var(--color-purple)/0.1)] mb-6 overflow-hidden"
+        >
+          <div className="flex items-center gap-2 px-4 py-2">
+            <Sparkles
+              size={14}
+              className="text-[hsl(var(--color-purple))]"
+            />
+
+            <span className="font-display text-sm tracking-widest uppercase text-[hsl(var(--color-purple))]">
+              Software Developer
+            </span>
+          </div>
+
+          <div className="h-5 w-px bg-[hsl(var(--color-purple)/0.3)]" />
+
+          <button
+            onClick={() =>
+              document
+                .getElementById("contact")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+            className="px-4 py-2 font-display text-sm tracking-widest uppercase text-[hsl(var(--color-purple))] hover:bg-[hsl(var(--color-purple)/0.1)] transition-colors"
+          >
+            Open to Work
+          </button>
         </motion.div>
 
         {/* Heading */}

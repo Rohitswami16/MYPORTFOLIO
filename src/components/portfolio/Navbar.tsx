@@ -3,16 +3,31 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-  "Home",
-  "About",
-  "Experience",
-  "Projects",
-  "Certificates",
-  "Contact",
+  "home",
+  "about",
+  "experience",
+  "projects",
+  "certificates",
+  "contact",
 ];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
+  const handleScroll = (id: string) => {
+    setOpen(false);
+
+    setTimeout(() => {
+      const section = document.getElementById(id);
+
+      if (section) {
+        section.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }, 150);
+  };
 
   return (
     <motion.nav
@@ -23,38 +38,25 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
-        <a
-          href="#home"
+        <button
+          onClick={() => handleScroll("home")}
           className="text-xl md:text-2xl font-bold text-gradient-vivid font-display tracking-wide"
         >
           Rohit.dev
-        </a>
+        </button>
 
-        {/* Desktop Nav */}
+        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
-            <a
+            <button
               key={item}
-              href={`#${item.toLowerCase()}`}
-              onClick={(e) => {
-                e.preventDefault();
-
-                const section = document.getElementById(
-                  item.toLowerCase()
-                );
-
-                section?.scrollIntoView({
-                  behavior: "smooth",
-                });
-
-                setOpen(false);
-              }}
-              className="relative text-sm font-display tracking-wide text-muted-foreground hover:text-foreground transition-colors duration-300 group"
+              onClick={() => handleScroll(item)}
+              className="relative text-sm font-display tracking-wide text-muted-foreground hover:text-[hsl(var(--color-purple))] transition-colors duration-300 group capitalize"
             >
               {item}
 
               <span className="absolute left-0 -bottom-1 h-[1.5px] w-0 bg-gradient-to-r from-[hsl(var(--color-purple))] to-[hsl(var(--color-pink))] transition-all duration-300 group-hover:w-full" />
-            </a>
+            </button>
           ))}
         </div>
 
@@ -67,7 +69,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Nav */}
+      {/* Mobile Navigation */}
       <AnimatePresence>
         {open && (
           <motion.div
@@ -79,26 +81,13 @@ const Navbar = () => {
           >
             <div className="flex flex-col gap-5 px-6 py-6">
               {navItems.map((item) => (
-                <a
+                <button
                   key={item}
-                  href={`#${item.toLowerCase()}`}
-                  onClick={(e) => {
-                    e.preventDefault();
-
-                    const section = document.getElementById(
-                      item.toLowerCase()
-                    );
-
-                    section?.scrollIntoView({
-                      behavior: "smooth",
-                    });
-
-                    setOpen(false);
-                  }}
-                  className="text-sm font-display tracking-wide text-muted-foreground hover:text-[hsl(var(--color-purple))] transition-colors duration-300"
+                  onClick={() => handleScroll(item)}
+                  className="text-left text-sm font-display tracking-wide text-muted-foreground hover:text-[hsl(var(--color-purple))] transition-colors duration-300 capitalize"
                 >
                   {item}
-                </a>
+                </button>
               ))}
             </div>
           </motion.div>
