@@ -3,52 +3,49 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "JDBC CRUD System",
+    title: "Skin Disease Detection Web App",
     description:
-      "Desktop application to perform CRUD operations on employee data with a user-friendly GUI. Includes exception handling for duplicates and invalid IDs.",
-    tags: ["Java", "JDBC", "MySQL"],
-    accent: "cyan",
-    github: "https://github.com/Rohitswami16",
+      "AI-powered diagnostic tool trained on 10,000+ images using a ViT + LSTM + BERT ensemble model, achieving 87% diagnostic accuracy. Patients upload images and receive AI-generated prescriptions via a Django backend — 20% faster than manual evaluation.",
+    tags: ["Python", "Django", "ViT", "BERT", "LSTM"],
+    accent: "purple",
+    github: "https://github.com/rohitswami16/skin-disease-detection",
+    live: "https://your-live-demo-link.com", // replace with actual or remove
+  },
+  {
+    title: "Spring Boot Employee REST API",
+    description:
+      "Production-grade REST API with full CRUD, JWT authentication, and role-based access control. Containerised with Docker, deployed to Railway, and automated with GitHub Actions CI/CD — with Swagger docs and global exception handling.",
+    tags: ["Java", "Spring Boot", "JWT", "Docker", "GitHub Actions"],
+    accent: "pink",
+    github: "https://github.com/rohitswami16/employee-api",
+    live: null,
   },
   {
     title: "Data Structure Visualizer",
     description:
-      "Interactive Java/JFrame application visualizing insertion, deletion, sorting, and searching operations on core data structures in real time with robust exception handling.",
-    tags: ["Java SE", "JFrame", "DSA"],
+      "Rebuilt from a desktop JFrame app into a browser-accessible React web app. Visualises insertion, deletion, sorting, and searching on arrays, stacks, queues, and linked lists — with Big-O complexity labels for each operation.",
+    tags: ["React.js", "JavaScript", "DSA"],
     accent: "orange",
-    github: "https://github.com/Rohitswami16",
-  },
-  {
-    title: "Skin Disease Detection",
-    description:
-      "Machine learning powered web application using BERT, LSTM, and Vision Transformer models for image-based skin disease detection with a Django backend serving predictions.",
-    tags: ["Python", "Django", "Machine Learning"],
-    accent: "purple",
-    github: "https://github.com/Rohitswami16",
+    github: "https://github.com/rohitswami16/data-structure-visualizer", // update with real link
+    live: null,
   },
   {
     title: "ERP Management System",
     description:
-      "Worked on backend modules and enterprise workflows for a live ERP system using Spring Boot, Servlets, and Hibernate with scalable architecture and database integration.",
-    tags: ["Spring Boot", "Hibernate", "MySQL", "ERP"],
-    accent: "pink",
-    github: "https://github.com/Rohitswami16",
+      "Contributed 4+ backend modules to a live ERP product at OMS Business Digitalisation. Built Spring Boot services that reduced manual processing time by ~30% and implemented MongoDB APIs improving data retrieval speed by ~25%.",
+    tags: ["Spring Boot", "Hibernate", "MongoDB", "MySQL"],
+    accent: "cyan",
+    github: null, // private/company project
+    live: null,
   },
   {
     title: "Company Portfolio Website",
     description:
-      "Designed and developed a production-ready responsive company website using React JS, Astro, and Tailwind CSS with modern UI, optimized performance, and clean architecture.",
-    tags: ["React JS", "Astro", "Tailwind CSS"],
-    accent: "cyan",
-    github: "https://github.com/Rohitswami16",
-  },
-  {
-    title: "Online Quiz System",
-    description:
-      "Full-stack quiz management platform where teachers can manage questions and students can attempt quizzes with category-based filtering and score tracking.",
-    tags: ["JSP", "Servlets", "MySQL", "Java"],
+      "Sole frontend developer — designed and delivered a production-ready company website in under 8 weeks using React.js, Astro, and Tailwind CSS. Went from zero to live deployment with optimised performance and modern UI.",
+    tags: ["React.js", "Astro", "Tailwind CSS"],
     accent: "orange",
-    github: "https://github.com/Rohitswami16",
+    github: null, // add if public
+    live: null,
   },
 ];
 
@@ -150,6 +147,7 @@ const ProjectsSection = () => {
                     />
                   </div>
                 </div>
+                
 
                 <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                   {project.description}

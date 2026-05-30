@@ -6,8 +6,9 @@ const skills = [
     items: [
       "Java (Core, Advanced)",
       "Spring Boot",
+      "Spring Security",
+      "Spring Data JPA",
       "Hibernate",
-      "RESTful API",
       "JUnit",
       "Mockito",
     ],
@@ -38,7 +39,7 @@ const skills = [
     category: "DevOps & Cloud",
     items: [
       "Docker",
-      "GitHub Actions (CI/CD)",
+      "GitHub Actions",
       "AWS (EC2 / S3 Basics)",
       "Railway",
       "Render",
@@ -50,9 +51,7 @@ const skills = [
     items: [
       "VS Code",
       "Spring Tool Suite",
-      "Git",
-      "GitHub",
-      "GitLab",
+      "Git / GitHub / GitLab",
       "SourceTree",
       "Postman",
     ],
@@ -62,22 +61,32 @@ const skills = [
     category: "AI & ML Tools",
     items: [
       "GitHub Copilot",
-      "ChatGPT (Dev Workflow)",
+      "LLM-assisted Development",
       "OpenAI API",
-      "LangChain (Basics)",
       "Prompt Engineering",
+      "LangChain (Basics)",
     ],
     color: "pink",
+  },
+  {
+    category: "Architecture & Patterns",
+    items: [
+      "REST API Design",
+      "Microservices Architecture",
+      "JWT Authentication & RBAC",
+      "CI/CD Pipeline Design",
+      "Docker Containerisation",
+    ],
+    color: "cyan",
   },
   {
     category: "Practices",
     items: [
       "Agile / Scrum",
-      "Microservices Architecture",
-      "REST API Design",
       "Code Review",
+      "Technical Documentation",
     ],
-    color: "cyan",
+    color: "orange",
   },
 ];
 
@@ -138,9 +147,9 @@ const AboutSection = () => {
           transition={{ delay: 0.1 }}
           className="text-3xl md:text-5xl font-bold mb-8"
         >
-          Building scalable{" "}
+          Turning ideas into{" "}
           <span className="text-gradient-cool">
-            full stack applications
+            production-ready software products
           </span>
         </motion.h2>
 
@@ -152,11 +161,7 @@ const AboutSection = () => {
           transition={{ delay: 0.2 }}
           className="text-muted-foreground max-w-2xl mb-16 leading-relaxed text-lg"
         >
-          I'm Rohit Swami — a Computer Science graduate and Java Full
-          Stack Developer with hands-on experience building live,
-          product-based applications including company websites and ERP
-          systems. I specialize in Java, Spring Boot, React JS, and
-          scalable backend systems with clean UI development.
+          "I'm Rohit Swami — a Java Full Stack Developer currently working at OMS Business Digitalisation, where I've shipped a production company website and contributed to a live ERP system within my first 5 months. I work across the full stack: Spring Boot APIs on the backend, React.js on the frontend, and MongoDB / MySQL for data. I care about clean architecture, fast APIs, and writing code that actually ships. Based in Bengaluru, and actively looking for my next full-time role or freelance project."
         </motion.p>
 
         {/* Skills Grid */}
