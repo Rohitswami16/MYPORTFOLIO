@@ -29,19 +29,19 @@ const projects = [
     github: "https://github.com/rohitswami16/data-structure-visualizer", // update with real link
     live: null,
   },
-  {
-    title: "ERP Management System",
-    description:
-      "Contributed 4+ backend modules to a live ERP product at OMS Business Digitalisation. Built Spring Boot services that reduced manual processing time by ~30% and implemented MongoDB APIs improving data retrieval speed by ~25%.",
-    tags: ["Spring Boot", "Hibernate", "MongoDB", "MySQL"],
-    accent: "cyan",
-    github: null, // private/company project
-    live: null,
-  },
+  // {
+  //   title: "ERP Management System",
+  //   description:
+  //     "Contributed 4+ backend modules to a live ERP product at OMS Business Digitalisation. Built Spring Boot services that reduced manual processing time by ~30% and implemented MongoDB APIs improving data retrieval speed by ~25%.",
+  //   tags: ["Spring Boot", "Hibernate", "MongoDB", "MySQL"],
+  //   accent: "cyan",
+  //   github: null, // private/company project
+  //   live: null,
+  // },
   {
     title: "Company Portfolio Website",
     description:
-      "Sole frontend developer — designed and delivered a production-ready company website in under 8 weeks using React.js, Astro, and Tailwind CSS. Went from zero to live deployment with optimised performance and modern UI.",
+      "Sole frontend developer responsible for designing and delivering a production-ready company website using React.js, Astro, and Tailwind CSS. Built a scalable, responsive application with a modern UI, optimized performance, and a strong focus on user experience.",
     tags: ["React.js", "Astro", "Tailwind CSS"],
     accent: "orange",
     github: null, // add if public
@@ -147,7 +147,7 @@ const ProjectsSection = () => {
                     />
                   </div>
                 </div>
-                
+
 
                 <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                   {project.description}

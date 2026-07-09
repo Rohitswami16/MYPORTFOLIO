@@ -8,12 +8,12 @@ const certificates = [
     year: "2023",
     color: "cyan",
   },
-  {
-    title: "K-Tech Idea Proposal — Funded",
-    issuer: "Government of Karnataka Initiative",
-    year: "2023",
-    color: "pink",
-  },
+  // {
+  //   title: "K-Tech Idea Proposal — Funded",
+  //   issuer: "Government of Karnataka Initiative",
+  //   year: "2023",
+  //   color: "pink",
+  // },
   {
     title: "Java Full Stack Internship",
     issuer: "Tequed Labs",

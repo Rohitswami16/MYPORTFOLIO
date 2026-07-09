@@ -162,9 +162,8 @@ const AboutSection = () => {
           transition={{ delay: 0.2 }}
           className="text-muted-foreground max-w-2xl mb-16 leading-relaxed text-lg"
         >
-          "I'm Rohit Swami — a Java Full Stack Developer currently working at OMS Business Digitalisation, where I've shipped a production company website and contributed to a live ERP system within my first 5 months. I work across the full stack: Spring Boot APIs on the backend, React.js on the frontend, and MongoDB / MySQL for data. I care about clean architecture, fast APIs, and writing code that actually ships. Based in Bengaluru, and actively looking for my next full-time role or freelance project."
+          I'm Rohit Swami, a Java Full Stack Developer who recently completed my internship at OMS Business Digitalisation. During my internship, I shipped a production-ready company website and contributed to a live ERP system, gaining hands-on experience building real-world applications. I work across the full stack, developing Spring Boot APIs on the backend, React.js on the frontend, and using MongoDB and MySQL for data management. I enjoy building scalable applications with clean architecture, high-performance APIs, and code that delivers real business value. Based in Bengaluru, I'm actively looking for a full-time Java Full Stack Developer role or freelance opportunities.
         </motion.p>
-
         {/* Skills Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {skills.map((group, i) => {
