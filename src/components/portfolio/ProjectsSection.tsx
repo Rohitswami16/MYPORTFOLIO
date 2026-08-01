@@ -5,7 +5,7 @@ const projects = [
   {
     title: "Skin Disease Detection Web App",
     description:
-      "AI-powered diagnostic tool trained on 10,000+ images using a ViT + LSTM + BERT ensemble model, achieving 87% diagnostic accuracy. Patients upload images and receive AI-generated prescriptions via a Django backend — 20% faster than manual evaluation.",
+      "AI-powered diagnostic tool trained on 10,000+ images using a ViT + LSTM + BERT ensemble model, achieving 87% diagnostic accuracy. Patients upload images and receive AI-generated prescriptions via a Django backend - 20% faster than manual evaluation.",
     tags: ["Python", "Django", "ViT", "BERT", "LSTM"],
     accent: "purple",
     github: "https://github.com/rohitswami16/skin-disease-detection",
@@ -14,7 +14,7 @@ const projects = [
   {
     title: "Spring Boot Employee REST API",
     description:
-      "Production-grade REST API with full CRUD, JWT authentication, and role-based access control. Containerised with Docker, deployed to Railway, and automated with GitHub Actions CI/CD — with Swagger docs and global exception handling.",
+      "Production-grade REST API with full CRUD, JWT authentication, and role-based access control. Containerised with Docker, deployed to Railway, and automated with GitHub Actions CI/CD - with Swagger docs and global exception handling.",
     tags: ["Java", "Spring Boot", "JWT", "Docker", "GitHub Actions"],
     accent: "pink",
     github: "https://github.com/rohitswami16/employee-api",
@@ -23,7 +23,7 @@ const projects = [
   {
     title: "Data Structure Visualizer",
     description:
-      "Rebuilt from a desktop JFrame app into a browser-accessible React web app. Visualises insertion, deletion, sorting, and searching on arrays, stacks, queues, and linked lists — with Big-O complexity labels for each operation.",
+      "Rebuilt from a desktop JFrame app into a browser-accessible React web app. Visualises insertion, deletion, sorting, and searching on arrays, stacks, queues, and linked lists - with Big-O complexity labels for each operation.",
     tags: ["React.js", "JavaScript", "DSA"],
     accent: "orange",
     github: "https://github.com/rohitswami16/data-structure-visualizer", // update with real link

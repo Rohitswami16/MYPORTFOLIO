@@ -95,7 +95,7 @@ const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-10"
         >
-          I think in products, not languages. Give me a problem — I'll figure out the right stack, build it, and ship it        </motion.p>
+          I think in products, not languages. Give me a problem - I'll figure out the right stack, build it, and ship it        </motion.p>
         {/* Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

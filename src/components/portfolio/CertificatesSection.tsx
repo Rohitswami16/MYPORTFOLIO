@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 
 const certificates = [
   {
-    title: "1st Place — Coding Competition",
+    title: "1st Place - Coding Competition",
     issuer: "Angadi Institute of Technology and Management",
     year: "2023",
     color: "cyan",
   },
   // {
-  //   title: "K-Tech Idea Proposal — Funded",
+  //   title: "K-Tech Idea Proposal - Funded",
   //   issuer: "Government of Karnataka Initiative",
   //   year: "2023",
   //   color: "pink",
@@ -21,7 +21,7 @@ const certificates = [
     color: "purple",
   },
   {
-    title: "B.E. Computer Science — CGPA 8.1",
+    title: "B.E. Computer Science - CGPA 8.1",
     issuer: "Angadi Institute of Technology and Management",
     year: "2024",
     color: "orange",

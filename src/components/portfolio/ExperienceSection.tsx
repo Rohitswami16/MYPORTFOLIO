@@ -9,7 +9,7 @@ const experiences = [
     points: [
       "Single-handedly built and launched a modern dynamic website from scratch in React.js, Astro & Tailwind CSS for a live production environment.",
       "Integrated WhatsApp direct contact & automated resume delivery via SendGrid, turning the site into an active lead generation tool.",
-      "Implemented end-to-end SEO (meta tags, sitemap.xml, robots.txt, Google Analytics, Search Console) — achieved top search ranking for targeted keywords.",
+      "Implemented end-to-end SEO (meta tags, sitemap.xml, robots.txt, Google Analytics, Search Console) achieved top search ranking for targeted keywords.",
       "Developed 4+ Spring Boot backend modules for a live ERP product, reducing manual processing time by ~30% for key workflows.",
       "Built RESTful APIs integrated with MongoDB, improving data retrieval speed by ~25% through query optimisation.",
       "Resolved 10+ Git merge conflicts and supported deployment pipelines, maintaining >99% uptime across both products.",
