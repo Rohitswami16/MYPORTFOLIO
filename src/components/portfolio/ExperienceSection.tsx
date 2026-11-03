@@ -6,13 +6,43 @@ const experiences = [
     role: "Trainee Software Developer",
     company: "OMS Business Digitalisation Pvt Ltd",
     period: "Sep 2025 — Jan 2026",
+    location: "Bengaluru, Karnataka, India · Remote",
+    type: "Full-time",
     points: [
-      "Single-handedly built and launched a modern dynamic website from scratch in React.js, Astro & Tailwind CSS for a live production environment.",
-      "Integrated WhatsApp direct contact & automated resume delivery via SendGrid, turning the site into an active lead generation tool.",
-      "Implemented end-to-end SEO (meta tags, sitemap.xml, robots.txt, Google Analytics, Search Console) achieved top search ranking for targeted keywords.",
-      "Developed 4+ Spring Boot backend modules for a live ERP product, reducing manual processing time by ~30% for key workflows.",
-      "Built RESTful APIs integrated with MongoDB, improving data retrieval speed by ~25% through query optimisation.",
-      "Resolved 10+ Git merge conflicts and supported deployment pipelines, maintaining >99% uptime across both products.",
+      "Worked in a product-based environment, independently delivering a client-facing website and contributing to a live ERP system across frontend, backend, and production support.",
+
+      "Developed and shipped 5+ backend features for a live ERP product using Java 8, Servlets, Spring Boot, and MongoDB, improving system functionality and accelerating product delivery.",
+
+      "Diagnosed and resolved production bugs across the ERP platform, optimising frontend and backend performance to ensure reliable operation in a live client environment.",
+
+      "Managed end-to-end version control using GitLab and SourceTree, resolving merge conflicts, maintaining clean repository structures, and supporting deployment workflows.",
+
+      "Sole developer for a production client website, engineering 8+ responsive pages using React.js, Astro, and Tailwind CSS.",
+
+      "Built and shipped key website features, including WhatsApp chat integration, animated Axios-based UI components, and a career portal with direct resume submission powered by SendGrid.",
+
+      "Implemented SEO using Google Search Console, XML sitemaps, and structured metadata to improve organic search visibility.",
+
+      "Integrated Google Analytics across all pages, monitored performance metrics, and optimised Core Web Vitals to improve website speed, accessibility, and overall user experience.",
+
+      "Diagnosed and resolved production website bugs, optimising frontend performance and maintaining reliable operation in a live client environment."
+    ],
+    color: "purple",
+  },
+  {
+    role: "Trainee",
+    company: "Technovins Softwares Pvt Ltd",
+    period: "Mar 2025 — Sep 2025",
+    
+    type: "Freelance",
+    points: [
+      "Built and shipped the production client website (technovins.com), developing 8+ responsive pages using React.js, Astro, and Tailwind CSS.",
+      "Integrated WhatsApp chat functionality for direct customer communication.",
+      "Developed a career portal with direct resume submission and automated email delivery using SendGrid.",
+      "Created animated, interactive UI components with Axios-based data handling and smooth motion effects.",
+      "Implemented SEO using Google Search Console, XML sitemaps, and structured metadata to improve organic search visibility.",
+      "Integrated Google Analytics across all pages to track website performance and user engagement.",
+      "Applied Core Web Vitals optimizations to improve website speed, accessibility, and overall user experience.",
     ],
     color: "cyan",
   },
@@ -20,17 +50,19 @@ const experiences = [
     role: "Java Full Stack Developer",
     company: "KodNest Technologies Pvt Ltd",
     period: "Jun 2024 — Mar 2025",
+    location: "Bengaluru, Karnataka, India · Remote",
     type: "Training",
     points: [
       "Completed an intensive 9-month full stack program covering Java, Spring Boot, Python, Django, React.js, HTML/CSS, MySQL, MongoDB, and Manual Testing.",
       "Built hands-on projects applying both frontend and backend skills in a structured, industry-aligned curriculum.",
     ],
-    color: "purple",
+    color: "orange",
   },
   {
-    role: "Java Full Stack Intern",
+    role: "Full-stack Developer intern",
     company: "Tequed Labs",
     period: "Aug 2023 — Sep 2023",
+    type: "Internship",
     points: [
       "Built responsive UI components with React.js and HTML/CSS, improving average page load time by 15%.",
       "Optimised backend database queries and introduced a caching layer, reducing API response time by 20%.",
@@ -61,6 +93,13 @@ const colorStyles: Record<string, { border: string; icon: string; badge: string;
     badge: "bg-[hsl(var(--color-pink)/0.15)] text-[hsl(var(--color-pink))]",
     dot: "bg-[hsl(var(--color-pink))] shadow-[0_0_12px_hsl(var(--color-pink)/0.8)]",
     line: "from-[hsl(var(--color-pink)/0.6)] to-transparent",
+  },
+  orange: {
+    border: "hover:border-[hsl(var(--color-orange)/0.5)]",
+    icon: "text-[hsl(var(--color-orange))]",
+    badge: "bg-[hsl(var(--color-orange)/0.15)] text-[hsl(var(--color-orange))]",
+    dot: "bg-[hsl(var(--color-orange))] shadow-[0_0_10px_hsl(var(--color-orange)/0.8)]",
+    line: "from-[hsl(var(--color-orange)/0.6)] to-transparent",
   },
 };
 
@@ -110,13 +149,7 @@ const ExperienceSection = () => {
                     whileInView={{ scale: 1, opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.2, type: "spring", stiffness: 200 }}
-                    className={`w-3 h-3 rounded-full shrink-0 z-10 ${
-                      exp.color === "cyan"
-                        ? "bg-[hsl(var(--color-cyan))] shadow-[0_0_10px_hsl(var(--color-cyan)/0.8)]"
-                        : exp.color === "purple"
-                        ? "bg-[hsl(var(--color-purple))] shadow-[0_0_10px_hsl(var(--color-purple)/0.8)]"
-                        : "bg-[hsl(var(--color-pink))] shadow-[0_0_10px_hsl(var(--color-pink)/0.8)]"
-                    }`}
+                    className={`w-3 h-3 rounded-full shrink-0 z-10 ${styles.dot}`}
                   />
                   {/* Connector line */}
                   {!isLast && (
@@ -149,8 +182,9 @@ const ExperienceSection = () => {
                         <span className={`text-xs font-display px-2.5 py-1 rounded-full ${styles.badge}`}>
                           {exp.period}
                         </span>
+
                         {exp.type && (
-                          <span className="text-xs font-display px-2.5 py-1 rounded-full bg-[hsl(var(--color-orange)/0.15)] text-[hsl(var(--color-orange))]">
+                          <span className={`text-xs font-display px-2.5 py-1 rounded-full ${styles.badge}`}>
                             {exp.type}
                           </span>
                         )}
